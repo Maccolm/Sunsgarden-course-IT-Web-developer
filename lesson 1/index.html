@@ -4,202 +4,233 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lesson 1</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<style>
-		h1,h3{
-			text-align: center;
-		}
-		.wrapper{
-			padding: 25px;
-		}
-		.item-row{
-			display: flex;
-			column-gap: 15px;
-		}
-		.item-time{
-			font-weight: 600;
-			min-width: 150px;
-		}
-		main{
-			margin: 0 auto 0 auto;
-		}
-		.day__container{
-			max-width: 500px;
-			margin: 0 auto 0 auto;
-		}
-	</style>
 	<div class="wrapper">
 		<div class="header">
-			<h1>My daily plan</h1>
+			<nav>
+				<h1>
+					<a data-goto =".schedule" href="#" class="menu__link">My daily plan</a>
+				</h1>
+			</nav>
 		</div>
 		<main class="main">
-			<div class="day__container">
-				<h3>Saturday</h3>
-				<ol class="list">
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">8:00 AM - 12:00 PM:</div>
-							<div class="item-task">Programming</div>
+			<section>
+				<aside class="introduce-page__video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/RAQJt50VJJs?si=IBVpT1ddH2jlCxNe"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</aside>
+				<div class="day__container">
+					<div class="introduce-page">
+						<div class="introduce-page__text">
+								<h4>
+									Dear Michelle,
+								</h4>
+							<p>
+								My name is Vitalii, and I am thrilled to join your school. Currently enrolled in IT courses specializing in
+								front-end development, I am genuinely impressed by your accomplishments and the quality of education you provide.
+							</p>
+							<p>
+								I chose to be part of this school because I believe in your approach to became a master in web-development environment. Having previously
+								self-taught and independently studied as a front-end developer, mostly website layout and pure JavaScript, I am eager to continue my educational journey
+								with enthusiasm, particularly as I am currently enjoying and excelling in the front-end development courses.
+							</p>
+							<p>
+								While I am immersed in the world of frontend development and education, my life also revolves around hobbies that bring
+								relaxation and joy.
+							</p>
+							<p>
+								The guitar is more than just an instrument for me; it's a way to express my feelings. When not coding or exploring new
+								technologies, I indulge in playing the guitar. Melodies emerge, reflecting my mood and emotions.
+							</p>
+							<p>
+								Another one of my passions is computer games. They are not just entertainment but also a way to learn new aspects and
+								solve complex challenges. Currently, I am diving into the magical world of "Hogwarts Legacy." This game opens up a
+								unique path for me in the world of spells and mysteries.
+							</p>
+							<p>
+								Every day brings new challenges and opportunities for me. This diversity of interests and activities makes my life rich
+								and fascinating. I believe that the combination of technical skills, music, and gaming makes me a unique individual.
+							</p>
+							<p>
+								Regarding my daily schedule, here's a quick overview:
+							</p>
 						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">12:00 PM - 1:00 PM:</div>
-							<div class="item-task"> Guitar play</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">1:00 PM - 2:00 PM:</div>
-							<div class="item-task"> Prepare and have a lunch</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">2:00 PM - 4:00 PM:</div>
-							<div class="item-task">Learn a language, English or Swedish</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">4:00 PM - 6:00 PM:</div>
-							<div class="item-task">Work on website layout</div>
-						</div>
-					</li>
-				</ol>
-			</div>
-			<div class="day__container">
-				<h3>Sunday</h3>
-				<ol class="list">
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">8:30 AM - 9:00 AM:</div>
-							<div class="item-task">Wake up and brush teeth</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">9:00 AM - 9:30 AM:</div>
-							<div class="item-task">Breakfast</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">9:30 AM - 10:30 AM:</div>
-							<div class="item-task">Household chores</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">10:30 AM - 12:30 PM:</div>
-							<div class="item-task">Study programming</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">12:30 PM - 13:30 PM:</div>
-							<div class="item-task">Lunch</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">13:30 PM - 15:30 PM:</div>
-							<div class="item-task">Playing guitar</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">16:00 PM - 17:00 PM:</div>
-							<div class="item-task">Gym workout</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">17:30 PM - 18:00 PM:</div>
-							<div class="item-task">Shower</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">18:00 PM - 19:00 PM:</div>
-							<div class="item-task">Dinner</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">19:00 PM - 21:00 PM:</div>
-							<div class="item-task">Spend the evening with friends</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">21:00 PM - 22:00 PM:</div>
-							<div class="item-task">Prepare food for the next day</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">22:00 PM ~ 23:00 PM:</div>
-							<div class="item-task">Little more programming</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">23:00 PM or late night:</div>
-							<div class="item-task">Go to bed</div>
-						</div>
-					</li>
-				</ol>
-			</div>
-			<div class="day__container">
-				<h3>Sunday</h3>
-				<ol class="list">
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">8:30 AM - 9:00 AM:</div>
-							<div class="item-task">Wake up and brush teeth</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">5:00 AM - 5:30 AM:</div>
-							<div class="item-task">Wake up and brush teeth</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time"> 6:00 AM:</div>
-							<div class="item-task">Head to work</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">7:00 AM - 4:00 PM</div>
-							<div class="item-task">Work</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">5:00 PM - 6:00 PM:</div>
-							<div class="item-task">Dinner</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">6:00 PM - 10:00 PM:</div>
-							<div class="item-task">Study programming</div>
-						</div>
-					</li>
-					<li class="item">
-						<div class="item-row">
-							<div class="item-time">10:00 PM:</div>
-							<div class="item-task">10:00 PM: Go to sleep</div>
-						</div>
-					</li>
-				</ol>
-			</div>
+					</div>
+				</div>
+			</section>
+			<section class="schedule">
+				<div class="day__container">
+					<h3>Saturday</h3>
+					<ol class="list">
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">8:00 AM - 12:00 PM:</div>
+								<div class="item-task">Programming</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">12:00 PM - 1:00 PM:</div>
+								<div class="item-task"> Guitar play</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">1:00 PM - 2:00 PM:</div>
+								<div class="item-task"> Prepare and have a lunch</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">2:00 PM - 4:00 PM:</div>
+								<div class="item-task">Learn a language, English or Swedish</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">4:00 PM - 6:00 PM:</div>
+								<div class="item-task">Work on website layout</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div class="day__container">
+					<h3>Sunday</h3>
+					<ol class="list">
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">8:30 AM - 9:00 AM:</div>
+								<div class="item-task">Wake up and brush teeth</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">9:00 AM - 9:30 AM:</div>
+								<div class="item-task">Breakfast</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">9:30 AM - 10:30 AM:</div>
+								<div class="item-task">Household chores</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">10:30 AM - 12:30 PM:</div>
+								<div class="item-task">Study programming</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">12:30 PM - 13:30 PM:</div>
+								<div class="item-task">Lunch</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">13:30 PM - 15:30 PM:</div>
+								<div class="item-task">Playing guitar</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">16:00 PM - 17:00 PM:</div>
+								<div class="item-task">Gym workout</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">17:30 PM - 18:00 PM:</div>
+								<div class="item-task">Shower</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">18:00 PM - 19:00 PM:</div>
+								<div class="item-task">Dinner</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">19:00 PM - 21:00 PM:</div>
+								<div class="item-task">Spend the evening with friends</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">21:00 PM - 22:00 PM:</div>
+								<div class="item-task">Prepare food for the next day</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">22:00 PM ~ 23:00 PM:</div>
+								<div class="item-task">Little more programming</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">23:00 PM or late night:</div>
+								<div class="item-task">Go to bed</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div class="day__container">
+					<h3>Sunday</h3>
+					<ol class="list">
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">8:30 AM - 9:00 AM:</div>
+								<div class="item-task">Wake up and brush teeth</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">5:00 AM - 5:30 AM:</div>
+								<div class="item-task">Wake up and brush teeth</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time"> 6:00 AM:</div>
+								<div class="item-task">Head to work</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">7:00 AM - 4:00 PM</div>
+								<div class="item-task">Work</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">5:00 PM - 6:00 PM:</div>
+								<div class="item-task">Dinner</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">6:00 PM - 10:00 PM:</div>
+								<div class="item-task">Study programming</div>
+							</div>
+						</li>
+						<li class="item">
+							<div class="item-row">
+								<div class="item-time">10:00 PM:</div>
+								<div class="item-task">10:00 PM: Go to sleep</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</section>
 		</main>
 	</div>
+	<script src="js/script.js"></script>
 </body>
 </html>

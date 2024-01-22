@@ -1,0 +1,70 @@
+h1,
+h3 {
+	text-align: center;
+}
+body{
+	background: url('../img/1.jpg') 0 25% / cover no-repeat;
+}
+.wrapper {
+	padding: 25px;
+}
+
+.item-row {
+	display: flex;
+	-moz-column-gap: 15px;
+	column-gap: 15px;
+}
+
+.item-time {
+	font-weight: 600;
+	min-width: 150px;
+}
+
+main {
+	margin: 0 auto 0 auto;
+	float: left;
+	width: 80%;
+}
+
+.day__container {
+	max-width: 500px;
+	margin: 0 auto 0 auto;
+}
+
+p {
+	font-size: 20px;
+}
+
+aside {
+	padding-top: 40px;
+	float: right;
+	width: 20%;
+}
+
+.menu__link {
+	text-decoration: none;
+	color: #000c7a;
+	position: relative;
+	transition: all 0.3s ease-out;
+}
+
+.menu__link::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: rgb(117, 117, 172);
+	transition: all 0.3s ease-out;
+}
+
+.menu__link:hover {
+	color: rgb(117, 117, 172);
+	transition: all 0.3s ease-out;
+}
+
+.menu__link:hover::after {
+	transition: all 0.3s ease-out;
+	width: 100%;
+}
